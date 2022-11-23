@@ -1,7 +1,7 @@
 
-import promptQuestions from '../'
-import AnswersI from './ts/interfaces';
-import { presentAnswer } from './utils';
+import promptQuestions from '../';
+import AnswersI from '../ts/interfaces';
+import { ShowReponse } from '../utils/index';
 
 export const performCalculation = ({
   first_num,
@@ -12,32 +12,32 @@ export const performCalculation = ({
   switch (operation) {
     case 'ADD':
       result = first_num + second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     case 'SUBTRACT':
       result = first_num - second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     case 'MULTIPLY':
       result = first_num * second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     case 'DIVIDE':
       result = first_num / second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     case 'EXPONENTIATION':
       result = first_num ** second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     case 'MODULUS':
       result = first_num % second_num;
-      presentAnswer(result);
+      ShowReponse(result);
       return promptQuestions();
 
     default:

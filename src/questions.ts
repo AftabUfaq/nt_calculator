@@ -4,7 +4,7 @@ export const questions = [
   {
     type: 'list',
     name: 'operation',
-    message: 'Choose an operation:',
+    message: 'Please Choose an operation:',
     choices: [
       "Add",
       "Subtract",

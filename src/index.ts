@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from 'inquirer';
 import { performCalculation } from './logic/calculate';
 import { questions } from './questions';

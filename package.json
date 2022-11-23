@@ -1,6 +1,6 @@
 {
-  "name": "nt_calculator",
-  "version": "1.0.0",
+  "name": "nt_calculator_ab",
+  "version": "1.0.2",
   "description": "Command Line Calculator using Node.js, TypeScript, and Inquirer",
   "homepage": "https://github.com/AftabUfaq/nt_calculator",
   "type": "module",
@@ -10,12 +10,9 @@
   },
   "main": "src/index",
   "scripts": {
-    "start": "ts-node src/index"
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts"
   },
-  "bin": {
-    "nt_calculator": "./src/index.ts"
-  },
-
+  "bin":"./src/index.ts",
   "keywords": [],
   "author": "Aftab Ameen",
   "license": "ISC",
